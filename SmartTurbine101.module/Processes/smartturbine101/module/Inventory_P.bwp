@@ -1432,9 +1432,9 @@
             name="_error_JDBCQuery" sca-bpel:internal="true"/>
         <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
         <bpws:variable element="ns4:inventoryDBJsonElement"
-            name="RenderJSON-input" sca-bpel:internal="true"/>
+            name="RenderJSON111-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns5:ActivityOutputClass"
-            name="RenderJSON" sca-bpel:internal="true"/>
+            name="RenderJSON111" sca-bpel:internal="true"/>
         <bpws:variable element="ns6:ActivityErrorData"
             name="_error_RenderJSON" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns0:getRequest1" name="get1" sca-bpel:internal="true"/>
@@ -1484,11 +1484,11 @@
                                 tibex:xpdlId="2938b162-db01-43f0-85aa-2d389ba48df3" variable="getOut-input">
                                 <tibex:inputBindings>
                                     <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://xmlns.example.com/20190826151954PLT&quot; xmlns:tns3=&quot;/T1551766170793Converted/JsonSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;RenderJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns3:InventoryAll_Response>&#xa;            &lt;tns3:dialogAction>&#xa;                &lt;tns3:type>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;closed&amp;quot;&quot;/>&#xa;                &lt;/tns3:type>&#xa;                &lt;tns3:fulfillmentState>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;fulfilled&amp;quot;&quot;/>&#xa;                &lt;/tns3:fulfillmentState>&#xa;                &lt;tns3:message>&#xa;                    &lt;tns3:contentType>&#xa;                        &lt;xsl:value-of select=&quot;&amp;quot;json&amp;quot;&quot;/>&#xa;                    &lt;/tns3:contentType>&#xa;                    &lt;tns3:content>&#xa;                        &lt;xsl:value-of select=&quot;$RenderJSON/jsonString&quot;/>&#xa;                    &lt;/tns3:content>&#xa;                &lt;/tns3:message>&#xa;            &lt;/tns3:dialogAction>&#xa;        &lt;/tns3:InventoryAll_Response>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://xmlns.example.com/20190826151954PLT&quot; xmlns:tns3=&quot;/T1551766170793Converted/JsonSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;RenderJSON111&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns3:InventoryAll_Response>&#xa;            &lt;tns3:dialogAction>&#xa;                &lt;tns3:type>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;closed&amp;quot;&quot;/>&#xa;                &lt;/tns3:type>&#xa;                &lt;tns3:fulfillmentState>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;fulfilled&amp;quot;&quot;/>&#xa;                &lt;/tns3:fulfillmentState>&#xa;                &lt;tns3:message>&#xa;                    &lt;tns3:contentType>&#xa;                        &lt;xsl:value-of select=&quot;&amp;quot;json&amp;quot;&quot;/>&#xa;                    &lt;/tns3:contentType>&#xa;                    &lt;tns3:content>&#xa;                        &lt;xsl:value-of select=&quot;$RenderJSON111/jsonString&quot;/>&#xa;                    &lt;/tns3:content>&#xa;                &lt;/tns3:message>&#xa;            &lt;/tns3:dialogAction>&#xa;        &lt;/tns3:InventoryAll_Response>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://xmlns.example.com/20190826151954PLT" xmlns:tns3="/T1551766170793Converted/JsonSchema" version="2.0"&gt;
-    &lt;xsl:param name="RenderJSON"/&gt;
+    &lt;xsl:param name="RenderJSON111"/&gt;
     &lt;xsl:template name="getOut-input" match="/"&gt;
         &lt;tns1:getResponse&gt;
             &lt;item&gt;
@@ -1505,7 +1505,7 @@
                                 &lt;xsl:value-of select="&amp;quot;json&amp;quot;"/&gt;
                             &lt;/tns3:contentType&gt;
                             &lt;tns3:content&gt;
-                                &lt;xsl:value-of select="$RenderJSON/jsonString"/&gt;
+                                &lt;xsl:value-of select="$RenderJSON111/jsonString"/&gt;
                             &lt;/tns3:content&gt;
                         &lt;/tns3:message&gt;
                     &lt;/tns3:dialogAction&gt;
@@ -1574,9 +1574,9 @@
                             </bpws:extensionActivity>
                             <bpws:extensionActivity>
                                 <tibex:activityExtension
-                                    inputVariable="RenderJSON-input"
-                                    name="RenderJSON"
-                                    outputVariable="RenderJSON"
+                                    inputVariable="RenderJSON111-input"
+                                    name="RenderJSON111"
+                                    outputVariable="RenderJSON111"
                                     tibex:xpdlId="6c045152-3cf6-47ea-82c4-765512dfd208" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
                                     <bpws:target linkName="JDBCQueryToRenderJSON"/>
